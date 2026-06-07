@@ -381,12 +381,12 @@ extension UISettingsBundle {
 extension UICustomizationSnapshot {
     static func __default() -> UICustomizationSnapshot {
         UICustomizationSnapshot(
-            button:        .default,
-            inputField:    .default,
-            title:         .default,
-            bodyText:      .default,
-            messageBubble: .default,
-            panel:         .default,
+            button:        ButtonCustomization.default,
+            inputField:    InputFieldCustomization.default,
+            title:         TitleCustomization.default,
+            bodyText:      BodyTextCustomization.default,
+            messageBubble: MessageBubbleCustomization.default,
+            panel:         PanelCustomization.default,
             textScale:     1.0
         )
     }

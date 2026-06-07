@@ -88,7 +88,7 @@ struct SettingsView: View {
                     Spacer()
                     Image(systemName: "chevron.right")
                         .font(.caption.weight(.semibold))
-                        .foregroundColor(.tertiaryLabel)
+                        .foregroundColor(.tertiary)
                 }
             }
             .foregroundColor(.primary)
@@ -129,7 +129,7 @@ struct SettingsView: View {
                     }
                     Image(systemName: "chevron.right")
                         .font(.caption.weight(.semibold))
-                        .foregroundColor(.tertiaryLabel)
+                        .foregroundColor(.tertiary)
                 }
             }
             .foregroundColor(.primary)
@@ -161,7 +161,7 @@ struct SettingsView: View {
                     Spacer()
                     Image(systemName: "chevron.right")
                         .font(.caption.weight(.semibold))
-                        .foregroundColor(.tertiaryLabel)
+                        .foregroundColor(.tertiary)
                 }
             }
             .foregroundColor(.primary)

@@ -94,6 +94,24 @@ struct UICustomizationSnapshot: Codable {
     var panel:         PanelCustomization
     var textScale:     Double
 
+    // Explicit memberwise init (Swift synthesises this, but declaring it
+    // prevents ambiguity with init(from:Decoder) in Xcode 26 / Swift 6)
+    init(button: ButtonCustomization,
+         inputField: InputFieldCustomization,
+         title: TitleCustomization,
+         bodyText: BodyTextCustomization,
+         messageBubble: MessageBubbleCustomization,
+         panel: PanelCustomization,
+         textScale: Double) {
+        self.button        = button
+        self.inputField    = inputField
+        self.title         = title
+        self.bodyText      = bodyText
+        self.messageBubble = messageBubble
+        self.panel         = panel
+        self.textScale     = textScale
+    }
+
     @MainActor
     init(from m: UICustomizationManager) {
         button        = m.button

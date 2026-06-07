@@ -14,13 +14,7 @@ struct BackgroundSettingsView: View {
     @ObservedObject private var manager = AppBackgroundManager.shared
     @Environment(\.dismiss) private var dismiss
 
-    @State private var selectedItems: [PhotosPickerItem] = []
-    @State private var showPhotoPicker  = false
-    @State private var pickerConfig     = PHPickerConfig()
     @State private var photoPickerItem: PhotosPickerItem? = nil
-
-    // Filter for picker — updated when user taps a type button
-    @State private var allowedTypes: [PHPickerFilter] = [.images, .videos, .livePhotos]
 
     private let thumbSize: CGFloat = 80
 
@@ -191,7 +185,7 @@ struct BackgroundSettingsView: View {
                         } else {
                             Image(systemName: "chevron.right")
                                 .font(.caption.weight(.semibold))
-                                .foregroundColor(.tertiaryLabel)
+                                .foregroundColor(.tertiary)
                         }
                     }
                 }

@@ -130,7 +130,7 @@ struct FontPickerView: View {
         return HStack(spacing: 12) {
             // Checkmark
             Image(systemName: isActive ? "checkmark.circle.fill" : "circle")
-                .foregroundColor(isActive ? Theme.Colors.accent : Color(.tertiaryLabel))
+                .foregroundColor(isActive ? Theme.Colors.accent : Color(.tertiarySystemFill))
                 .font(.system(size: 20))
                 .frame(width: 24)
 
