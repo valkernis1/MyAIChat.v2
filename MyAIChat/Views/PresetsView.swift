@@ -225,12 +225,16 @@ struct PresetsView: View {
     private var builtInPresetsSection: some View {
         Section {
             ForEach(manager.builtInPresets) { preset in
-                PresetRow(preset: preset) {
-                    pendingPreset   = preset
-                    applyBg         = false
-                    showApplyConfirm = true
-                } onRename: nil
-                  onDelete: nil
+                PresetRow(
+                    preset: preset,
+                    onApply: {
+                        pendingPreset    = preset
+                        applyBg          = false
+                        showApplyConfirm = true
+                    },
+                    onRename: nil,
+                    onDelete: nil
+                )
             }
         } header: {
             Text("Встроенные пресеты")
