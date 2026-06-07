@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B0000000000000000000001 /* MyAIChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000001 /* MyAIChatApp.swift */; };
+		2B0000000000000000000002 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000002 /* ChatMessage.swift */; };
+		2B0000000000000000000003 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000003 /* Conversation.swift */; };
+		2B0000000000000000000004 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000004 /* ChatViewModel.swift */; };
+		2B0000000000000000000005 /* ConversationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000005 /* ConversationListViewModel.swift */; };
+		2B0000000000000000000006 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000006 /* ChatView.swift */; };
+		2B0000000000000000000007 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000007 /* MessageBubbleView.swift */; };
+		2B0000000000000000000008 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000008 /* MessageInputView.swift */; };
+		2B0000000000000000000009 /* ConversationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000009 /* ConversationListView.swift */; };
+		2B000000000000000000000A /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000000A /* AIService.swift */; };
+		2B000000000000000000000B /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000000B /* PersistenceService.swift */; };
+		2B000000000000000000000C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000000C /* Extensions.swift */; };
+		2B0000000000000000000010 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000010 /* Theme.swift */; };
+		2B0000000000000000000020 /* LiquidGlassModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000020 /* LiquidGlassModifier.swift */; };
+		2B000000000000000000000D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000000D /* Assets.xcassets */; };
+		2B000000000000000000000E /* AIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000000E1 /* AIProvider.swift */; };
+		2B000000000000000000000F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000000F1 /* SettingsManager.swift */; };
+		2B0000000000000000000011 /* StreamingAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000011 /* StreamingAIService.swift */; };
+		2B0000000000000000000012 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000012 /* SettingsView.swift */; };
+		2B0000000000000000000013 /* UICustomizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000013 /* UICustomizationManager.swift */; };
+		2B0000000000000000000014 /* UIEditingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000014 /* UIEditingManager.swift */; };
+		2B0000000000000000000015 /* ColorPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000015 /* ColorPickerRow.swift */; };
+		2B0000000000000000000016 /* ElementEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000016 /* ElementEditorView.swift */; };
+		2B0000000000000000000017 /* ElementPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000017 /* ElementPickerView.swift */; };
+		2B0000000000000000000018 /* UITextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000018 /* UITextManager.swift */; };
+		2B0000000000000000000019 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000019 /* TextEditorView.swift */; };
+		2B000000000000000000001A /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000001A /* FontManager.swift */; };
+		2B000000000000000000001B /* FontPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000001B /* FontPickerView.swift */; };
+		2B000000000000000000001C /* AppBackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000001C /* AppBackgroundManager.swift */; };
+		2B000000000000000000001D /* AppBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000001D /* AppBackgroundView.swift */; };
+		2B000000000000000000001E /* BackgroundSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000001E /* BackgroundSettingsView.swift */; };
+		2B000000000000000000001F /* UISettingsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000000000000000000001F /* UISettingsBundle.swift */; };
+		2B0000000000000000000021 /* UIPresetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000021 /* UIPresetsManager.swift */; };
+		2B0000000000000000000022 /* PresetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000022 /* PresetsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A0000000000000000000001 /* MyAIChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAIChatApp.swift; sourceTree = "<group>"; };
+		1A0000000000000000000002 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		1A0000000000000000000003 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		1A0000000000000000000004 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		1A0000000000000000000005 /* ConversationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewModel.swift; sourceTree = "<group>"; };
+		1A0000000000000000000006 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		1A0000000000000000000007 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		1A0000000000000000000008 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		1A0000000000000000000009 /* ConversationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListView.swift; sourceTree = "<group>"; };
+		1A000000000000000000000A /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		1A000000000000000000000B /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		1A000000000000000000000C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1A0000000000000000000010 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1A0000000000000000000020 /* LiquidGlassModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassModifier.swift; sourceTree = "<group>"; };
+		1A000000000000000000000D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A000000000000000000000E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A000000000000000000000F /* MyAIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAIChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A000000000000000000000E1 /* AIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIProvider.swift; sourceTree = "<group>"; };
+		1A000000000000000000000F1 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		1A0000000000000000000011 /* StreamingAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingAIService.swift; sourceTree = "<group>"; };
+		1A0000000000000000000012 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1A0000000000000000000013 /* UICustomizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomizationManager.swift; sourceTree = "<group>"; };
+		1A0000000000000000000014 /* UIEditingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEditingManager.swift; sourceTree = "<group>"; };
+		1A0000000000000000000015 /* ColorPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerRow.swift; sourceTree = "<group>"; };
+		1A0000000000000000000016 /* ElementEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementEditorView.swift; sourceTree = "<group>"; };
+		1A0000000000000000000017 /* ElementPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementPickerView.swift; sourceTree = "<group>"; };
+		1A0000000000000000000018 /* UITextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextManager.swift; sourceTree = "<group>"; };
+		1A0000000000000000000019 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
+		1A000000000000000000001A /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		1A000000000000000000001B /* FontPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPickerView.swift; sourceTree = "<group>"; };
+		1A000000000000000000001C /* AppBackgroundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundManager.swift; sourceTree = "<group>"; };
+		1A000000000000000000001D /* AppBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundView.swift; sourceTree = "<group>"; };
+		1A000000000000000000001E /* BackgroundSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSettingsView.swift; sourceTree = "<group>"; };
+		1A000000000000000000001F /* UISettingsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsBundle.swift; sourceTree = "<group>"; };
+		1A0000000000000000000021 /* UIPresetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPresetsManager.swift; sourceTree = "<group>"; };
+		1A0000000000000000000022 /* PresetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D0000000000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C0000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				3C0000000000000000000002 /* MyAIChat */,
+				3C000000000000000000000A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C0000000000000000000002 /* MyAIChat */ = {
+			isa = PBXGroup;
+			children = (
+				3C0000000000000000000003 /* App */,
+				3C0000000000000000000004 /* Models */,
+				3C0000000000000000000005 /* ViewModels */,
+				3C0000000000000000000006 /* Views */,
+				3C0000000000000000000007 /* Services */,
+				3C0000000000000000000008 /* Utilities */,
+				3C0000000000000000000009 /* Resources */,
+				1A000000000000000000000E /* Info.plist */,
+			);
+			path = MyAIChat;
+			sourceTree = "<group>";
+		};
+		3C0000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000001 /* MyAIChatApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3C0000000000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000002 /* ChatMessage.swift */,
+				1A0000000000000000000003 /* Conversation.swift */,
+				1A000000000000000000000E1 /* AIProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C0000000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000004 /* ChatViewModel.swift */,
+				1A0000000000000000000005 /* ConversationListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3C0000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000006 /* ChatView.swift */,
+				1A0000000000000000000007 /* MessageBubbleView.swift */,
+				1A0000000000000000000008 /* MessageInputView.swift */,
+				1A0000000000000000000009 /* ConversationListView.swift */,
+				1A0000000000000000000012 /* SettingsView.swift */,
+				1A0000000000000000000015 /* ColorPickerRow.swift */,
+				1A0000000000000000000016 /* ElementEditorView.swift */,
+				1A0000000000000000000017 /* ElementPickerView.swift */,
+				1A0000000000000000000019 /* TextEditorView.swift */,
+				1A000000000000000000001B /* FontPickerView.swift */,
+				1A000000000000000000001D /* AppBackgroundView.swift */,
+				1A000000000000000000001E /* BackgroundSettingsView.swift */,
+				1A0000000000000000000022 /* PresetsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C0000000000000000000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A000000000000000000000A /* AIService.swift */,
+				1A000000000000000000000B /* PersistenceService.swift */,
+				1A000000000000000000001A /* FontManager.swift */,
+				1A000000000000000000000F1 /* SettingsManager.swift */,
+				1A0000000000000000000011 /* StreamingAIService.swift */,
+				1A0000000000000000000013 /* UICustomizationManager.swift */,
+				1A0000000000000000000014 /* UIEditingManager.swift */,
+				1A0000000000000000000018 /* UITextManager.swift */,
+				1A000000000000000000001C /* AppBackgroundManager.swift */,
+				1A000000000000000000001F /* UISettingsBundle.swift */,
+				1A0000000000000000000021 /* UIPresetsManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3C0000000000000000000008 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A000000000000000000000C /* Extensions.swift */,
+				1A0000000000000000000010 /* Theme.swift */,
+				1A0000000000000000000020 /* LiquidGlassModifier.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3C0000000000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A000000000000000000000D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C000000000000000000000A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A000000000000000000000F /* MyAIChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D0000000000000000000002 /* MyAIChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D0000000000000000000007 /* Build configuration list for PBXNativeTarget "MyAIChat" */;
+			buildPhases = (
+				4D0000000000000000000003 /* Sources */,
+				4D0000000000000000000005 /* Frameworks */,
+				4D0000000000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAIChat;
+			productName = MyAIChat;
+			productReference = 1A000000000000000000000F /* MyAIChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4D0000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 4D0000000000000000000006 /* Build configuration list for PBXProject "MyAIChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C0000000000000000000001;
+			productRefGroup = 3C000000000000000000000A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D0000000000000000000002 /* MyAIChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D0000000000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B000000000000000000000D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D0000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0000000000000000000001 /* MyAIChatApp.swift in Sources */,
+				2B0000000000000000000002 /* ChatMessage.swift in Sources */,
+				2B0000000000000000000003 /* Conversation.swift in Sources */,
+				2B0000000000000000000004 /* ChatViewModel.swift in Sources */,
+				2B0000000000000000000005 /* ConversationListViewModel.swift in Sources */,
+				2B0000000000000000000006 /* ChatView.swift in Sources */,
+				2B0000000000000000000007 /* MessageBubbleView.swift in Sources */,
+				2B0000000000000000000008 /* MessageInputView.swift in Sources */,
+				2B0000000000000000000009 /* ConversationListView.swift in Sources */,
+				2B000000000000000000000A /* AIService.swift in Sources */,
+				2B000000000000000000000B /* PersistenceService.swift in Sources */,
+				2B000000000000000000000C /* Extensions.swift in Sources */,
+				2B0000000000000000000010 /* Theme.swift in Sources */,
+				2B0000000000000000000020 /* LiquidGlassModifier.swift in Sources */,
+				2B000000000000000000000E /* AIProvider.swift in Sources */,
+				2B000000000000000000000F /* SettingsManager.swift in Sources */,
+				2B0000000000000000000011 /* StreamingAIService.swift in Sources */,
+				2B0000000000000000000012 /* SettingsView.swift in Sources */,
+				2B0000000000000000000013 /* UICustomizationManager.swift in Sources */,
+				2B0000000000000000000014 /* UIEditingManager.swift in Sources */,
+				2B0000000000000000000015 /* ColorPickerRow.swift in Sources */,
+				2B0000000000000000000016 /* ElementEditorView.swift in Sources */,
+				2B0000000000000000000017 /* ElementPickerView.swift in Sources */,
+				2B0000000000000000000018 /* UITextManager.swift in Sources */,
+				2B0000000000000000000019 /* TextEditorView.swift in Sources */,
+				2B000000000000000000001A /* FontManager.swift in Sources */,
+				2B000000000000000000001B /* FontPickerView.swift in Sources */,
+				2B000000000000000000001C /* AppBackgroundManager.swift in Sources */,
+				2B000000000000000000001D /* AppBackgroundView.swift in Sources */,
+				2B000000000000000000001E /* BackgroundSettingsView.swift in Sources */,
+				2B000000000000000000001F /* UISettingsBundle.swift in Sources */,
+				2B0000000000000000000021 /* UIPresetsManager.swift in Sources */,
+				2B0000000000000000000022 /* PresetsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D0000000000000000000008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D0000000000000000000009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D000000000000000000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MyAIChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyAIChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D000000000000000000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MyAIChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyAIChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D0000000000000000000006 /* Build configuration list for PBXProject "MyAIChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0000000000000000000008 /* Debug */,
+				4D0000000000000000000009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D0000000000000000000007 /* Build configuration list for PBXNativeTarget "MyAIChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D000000000000000000000A /* Debug */,
+				4D000000000000000000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D0000000000000000000001 /* Project object */;
+}

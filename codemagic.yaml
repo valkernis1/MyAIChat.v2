@@ -1,0 +1,42 @@
+definitions:
+  environment_defaults: &environment_defaults
+    xcode: latest
+  common_vars: &common_vars
+    XCODE_PROJECT: "MyAIChat.xcodeproj"
+    XCODE_SCHEME: "MyAIChat"
+
+workflows:
+
+  ios-unsigned-device:
+    name: iOS Device IPA (без подписи, для Sideloadly)
+    instance_type: mac_mini_m2
+    max_build_duration: 30
+    environment:
+      <<: *environment_defaults
+      vars:
+        <<: *common_vars
+    scripts:
+      - name: Build для реального iPhone (unsigned)
+        script: |
+          xcodebuild \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            ONLY_ACTIVE_ARCH=NO \
+            clean build \
+            -derivedDataPath build
+
+      - name: Упаковать .app в .ipa
+        script: |
+          APP_PATH=$(find build -name "*.app" -not -path "*Simulator*" | head -1)
+          mkdir -p Payload
+          cp -r "$APP_PATH" Payload/
+          zip -r MyAIChat.ipa Payload
+
+    artifacts:
+      - MyAIChat.ipa
